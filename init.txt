@@ -1,0 +1,125 @@
+##### User Settings #####
+# crawl 0.21.0
+
+# Commands Cheatsheet
+
+# &: enter wizard mode
+# &?: show wizard commands
+# ??: normal commands
+# x?, X?, G?, Ctrl-F?: examine commands
+# =: resassign item/ability/spell slots
+
+# Macros
+
+# s: za
+# <f1>: z?
+# <f2>: zb
+# <f3>: zc
+# <f4>: zd
+
+# crawl/macro.txt
+
+macro_dir =
+
+# Warning
+
+hp_warning = 70
+hp_colour = 70:yellow, 50:red
+autofight_warning = 500
+# mp_warning = 30
+
+warn_hatches = true
+fail_severity_to_confirm = 1
+wall_jump_prompt = true
+
+# Autofight
+
+autofight_stop = 70
+autofight_hunger_stop = 1
+autofight_caught = true
+
+# Automagic
+
+automagic_stop = 50
+
+:if you.skill("Spellcasting") > you.skill("Fighting") then
+  automagic_enable = true
+:else
+  automagic_enable = false
+:end
+
+# Autothrow
+
+:if you.skill("Stealth") > 4 then
+  autofight_throw = false
+:else
+  autofight_throw = true
+:end
+
+# Travel
+
+auto_butcher = true
+easy_eat_chunks = true
+rest_wait_both = true
+explore_auto_rest = true
+
+auto_exclude += death knight
+
+# Inventory
+
+equip_unequip = true
+auto_switch = true
+
+# autopickup = $?!+"/%
+  autopickup = $?!+"/%(|}
+autopickup_exceptions += >throwing net
+
+sort_menus = true: equipped, identified, basename, qualname, curse, qty
+assign_item_slot = backward
+
+item_slot ^= identify:i
+item_slot ^= blinking:k
+item_slot ^= teleportation:t
+item_slot ^= remove curse:c
+item_slot ^= stone:Z
+item_slot ^= ration:z
+
+# Miscellaneous
+
+default_manual_training = true
+skill_focus = toggle
+restart_after_game = true
+restart_after_save = true
+
+# Terminal (ConEmu, powershell)
+
+view_max_width = 65
+view_max_height = 21
+mlist_min_height = 5
+# msg_min_height = 10
+dos_use_background_intensity = true
+
+# colour.OLDCOLOUR = NEWCOLOUR
+
+##### Unused Settings #####
+
+# Tile
+
+# tile_skip_title = true
+# tile_layout_priority = monster, minimap, inventory
+# tile_show_items = %?!(
+
+# tile_window_width   = 0
+# tile_window_height  = 0
+# tile_full_screen = false
+# tile_full_screen = true
+
+# tile_font_ft_light = true
+# tile_font_crt_size  = 20
+# tile_font_stat_size = 20
+# tile_font_msg_size  = 20
+# tile_font_tip_size  = 20
+# tile_font_lbl_size  = 20
+
+# tile_map_pixels = 2
+
