@@ -72,10 +72,10 @@ auto_switch = true
 
 # autopickup = $?!+"/%
   autopickup = $?!+"/%(|}
-autopickup_exceptions += >throwing net
+# autopickup_exceptions += >throwing net
 
 sort_menus = true: equipped, identified, basename, qualname, curse, qty
-assign_item_slot = backward
+# assign_item_slot = backward
 
 item_slot ^= identify:i
 item_slot ^= blinking:k
