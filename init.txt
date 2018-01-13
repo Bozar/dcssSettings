@@ -1,5 +1,5 @@
-##### User Settings #####
-# crawl 0.21.0
+##### Memorandum #####
+# Crawl 0.21.0
 
 # Commands Cheatsheet
 
@@ -16,6 +16,17 @@
 # <f2>: zb
 # <f3>: zc
 # <f4>: zd
+
+# Online Resources
+
+# https://crawl.develz.org/wiki/doku.php?id=dcss:help:maps:lua
+# http://crawl.develz.org/
+# http://crawl.chaosforge.org/Crawl_Wiki
+# https://www.reddit.com/r/dcss/
+# https://www.reddit.com/r/roguelikes/
+# https://www.reddit.com/r/roguelikedev/
+
+##### User Settings #####
 
 # crawl/macro.txt
 
